@@ -1,4 +1,4 @@
-@prefix cw: <https://github.com/JiriResler/solid-choose-well-ontology.ttl#> .
+@prefix cw: <https://github.com/JiriResler/solid-choose-well-ontology/blob/main/choosewell.ttl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -11,4 +11,4 @@ cw: rdf:type owl:Ontology ;
     dcterms:title "Choose well application ontology" ;
     dcterms:description "The ontology adding RDF terms required for the Choose Well dietary application." ;
     vann:preferredNamespacePrefix "cw" ;
-    vann:preferredNamespaceURI <https://github.com/JiriResler/solid-choose-well-ontology.ttl#> .
+    vann:preferredNamespaceURI <https://github.com/JiriResler/solid-choose-well-ontology/blob/main/choosewell.ttl#> .
