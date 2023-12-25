@@ -1,4 +1,4 @@
-@prefix choosewell: <https://github.com/JiriResler/solid-choose-well-ontology/blob/main/choosewell#> .
+@prefix cw: <https://github.com/JiriResler/solid-choose-well-ontology/blob/main/choosewell/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -7,8 +7,25 @@
 @prefix schema: <https://schema.org/> .
 @prefix solid: <http://www.w3.org/ns/solid/terms#> .
 
-choosewell: rdf:type owl:Ontology ;
+cw:# rdf:type owl:Ontology ;
     dcterms:title "Choose well application ontology" ;
     dcterms:description "The ontology adding RDF terms required for the Choose Well dietary application." ;
     vann:preferredNamespacePrefix "cw" ;
     vann:preferredNamespaceURI <https://github.com/JiriResler/solid-choose-well-ontology/blob/main/choosewell.ttl#> .
+
+cw:allergicTo a rdf:Property ;
+    rdfs:label "Allergic to"@en ;
+    rdfs:domain foaf:Person ;
+    rdfs:range cw:Allergen .
+
+cw:menuLegendNumber a rdf:Property ;
+    rdfs:label "Menu legend number"@en ;
+    rdfs:domain cw:Allergen ;
+    rdfs:range xsd:integer .
+
+cw:Allergen a rdfs:Class ;
+    rdfs:label "Allergen"@en ;
+    rdfs:comment "An allergen"@en .
+
+cw:celery a cw:allergen;
+    cw:menuLegendNumber 1 .
