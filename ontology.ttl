@@ -6,6 +6,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ontology: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/ontology#> .
+@prefix schema: <https://schema.org/> .
 
 ontology:
   a owl:Ontology ;
@@ -33,10 +34,11 @@ ontology:hasIcon
   rdfs:domain ontology:Allergen ;
   rdfs:range foaf:Image .
 
-ontology:List_of_allergens
+ontology:List_of_most_common_allergens
   a rdf:Seq ;
-  rdfs:label "List of 14 common allergens"@en ;
-  dcterms:description "A list of 14 common allergens as defined by the European Union."@en .
+  rdfs:label "List of most common allergens"@en ;
+  dcterms:description "A list of most common allergens defined by the European Union. There are currently 14 allergens in the list."@en ;
+  schema:url <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/resource/List_of_most_common_allergens> .
 
 ontology:allergicTo
   a rdf:Property ;
