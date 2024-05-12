@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ontology: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/ontology#> .
+
+ontology:
+  a owl:Ontology ;
+  dcterms:title "Personal restaurant menu viewer application ontology"@en ;
+  dcterms:description "The ontology describing classes and properties used by applications which work with personal eating preferences of users."@en ;
+  vann:preferredNamespacePrefix "eatingPreferences" .
+
+ontology:Allergen 
+  a rdfs:Class ;
+  rdfs:label "Allergen"@en ;
+  rdfs:comment "An allergen"@en ;
+  owl:sameAs <http://dbpedia.org/resource/Allergen> .
+
+ontology:allergenNumber
+  a rdf:Property ;
+  rdfs:label "Allergen number"@en ;
+  dcterms:description "A number which is used in restaurant menus to identify a specific allergen"@en ;
+  rdfs:domain ontology:Allergen ;
+  rdfs:range xsd:integer .
+
+ontology:hasIcon
+  a rdf:Property ;
+  rdfs:label "Has icon"@en ;
+  dcterms:description "The URL of a file which contains an image of the allergen"@en ;
+  rdfs:domain ontology:Allergen ;
+  rdfs:range foaf:Image .
+
+ontology:List_of_allergens
+  a rdf:Seq ;
+  rdfs:label "List of 14 common allergens"@en ;
+  dcterms:description "A list of 14 common allergens as defined by the European Union."@en .
+
+ontology:allergicTo
+  a rdf:Property ;
+  rdfs:label "Allergic to"@en ;
+  rdfs:domain foaf:Person ;
+  rdfs:range ontology:Allergen .
