@@ -1,0 +1,13 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pers: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/ontology#> .
+@prefix res: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/resource/> .
+
+res:Peanuts
+  a pers:Allergen ;
+  pers:allergenNumber 5 ;
+  rdfs:label "Peanuts"@en ;
+  rdfs:label "Arašidy"@sk ;
+  rdfs:label "Arašídy"@cz ;
+  pers:hasIcon res:peanuts.svg ;
+  owl:sameAs <http://dbpedia.org/resource/Peanut> .
