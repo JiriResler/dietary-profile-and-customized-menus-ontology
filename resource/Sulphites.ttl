@@ -1,0 +1,13 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pers: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/ontology#> .
+@prefix res: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/resource/> .
+
+res:Sulphites
+  a pers:Allergen ;
+  pers:allergenNumber 12 ;
+  rdfs:label "Sulphites"@en ;
+  rdfs:label "Siričitany"@sk ;
+  rdfs:label "Siřičitany"@cz ;
+  pers:hasIcon res:sulphites.svg ;
+  owl:sameAs <http://dbpedia.org/resource/Sulfite> .
