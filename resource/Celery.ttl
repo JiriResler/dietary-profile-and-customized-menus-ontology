@@ -1,0 +1,11 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://personal-restaurant-menu-viewer-app.solidcommunity.net/public/resource/Celery> 
+  a <https://personal-restaurant-menu-viewer-app.solidcommunity.net/public/ontology#Allergen> ;
+  <https://personal-restaurant-menu-viewer-app.solidcommunity.net/public/ontology#allergenNumber> 1 ;
+  rdfs:label "Celery"@en ;
+  rdfs:label "Zeler"@sk ;
+  rdfs:label "Celer"@cz ;
+  <https://personal-restaurant-menu-viewer-app.solidcommunity.net/public/ontology#hasIcon> <https://personal-restaurant-menu-viewer-app.solidcommunity.net/public/allergen_icons/celery.svg> ;
+  owl:sameAs <http://dbpedia.org/resource/Celery> .
