@@ -1,12 +1,13 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix pers: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/> .
+@prefix pers: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/ontology#> .
+@prefix res: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/resource/> .
 
-pers:resource/Celery 
-  a pers:ontology#Allergen ;
-  pers:ontology#allergenNumber 1 ;
+res:cellery
+  a pers:Allergen ;
+  pers:allergenNumber 1 ;
   rdfs:label "Celery"@en ;
   rdfs:label "Zeler"@sk ;
   rdfs:label "Celer"@cz ;
-  pers:ontology#hasIcon pers:resource/celery.svg ;
+  pers:hasIcon res:celery.svg ;
   owl:sameAs <http://dbpedia.org/resource/Celery> .
