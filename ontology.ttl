@@ -11,8 +11,7 @@
 ontology:
   a owl:Ontology ;
   dcterms:title "Personal restaurant menu viewer application ontology"@en ;
-  dcterms:description "The ontology describing classes and properties used by applications which work with personal eating preferences of users."@en ;
-  vann:preferredNamespacePrefix "eatingPreferences" .
+  dcterms:description "The ontology describing classes and properties used by applications which work with personal eating preferences of users."@en .
 
 ontology:Allergen 
   a rdfs:Class ;
