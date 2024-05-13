@@ -36,7 +36,7 @@ ontology:hasIcon
 ontology:List_of_most_common_allergens
   a rdf:Seq ;
   rdfs:label "List of most common allergens"@en ;
-  dcterms:description "A list of most common allergens defined by the European Union. There are currently 14 allergens in the list."@en ;
+  dcterms:description "A list of most common allergens defined by the European Union."@en ;
   schema:url <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/resource/List_of_most_common_allergens> .
 
 ontology:allergicTo
