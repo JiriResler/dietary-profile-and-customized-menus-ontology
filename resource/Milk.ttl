@@ -1,0 +1,13 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pers: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/ontology#> .
+@prefix res: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/resource/> .
+
+res:Milk
+  a pers:Allergen ;
+  pers:allergenNumber 7 ;
+  rdfs:label "Milk"@en ;
+  rdfs:label "Mlieko"@sk ;
+  rdfs:label "Mléko"@cz ;
+  pers:hasIcon res:milk.svg ;
+  owl:sameAs <http://dbpedia.org/resource/Milk> .
