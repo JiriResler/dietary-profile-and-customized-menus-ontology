@@ -1,1 +1,23 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix res: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/resource/> .
 
+res:List_of_most_common_allergens
+  a rdf:Seq ;
+  rdfs:label "List of most common allergens"@en ;
+  dcterms:description "A list of most common allergens defined by the European Union. There are currently 14 allergens in the list."@en ;
+  rdf:_1 res:Gluten ;
+  rdf:_2 res:Crustacean ;
+  rdf:_3 res:Eggs ;
+  rdf:_4 res:Fish ;
+  rdf:_5 res:Peanuts ;
+  rdf:_6 res:Soya ;
+  rdf:_7 res:Milk ;
+  rdf:_8 res:Nuts ;
+  rdf:_9 res:Celery ;
+  rdf:_10 res:Mustard ;
+  rdf:_11 res:Sesame ;
+  rdf:_12 res:Sulphites ;
+  rdf:_13 res:Lupin ;
+  rdf:_14 res:Molluscs .
