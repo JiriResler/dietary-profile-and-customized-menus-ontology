@@ -3,7 +3,7 @@
 @prefix pers: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/ontology#> .
 @prefix res: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/resource/> .
 
-res:cellery
+res:Celery
   a pers:Allergen ;
   pers:allergenNumber 1 ;
   rdfs:label "Celery"@en ;
