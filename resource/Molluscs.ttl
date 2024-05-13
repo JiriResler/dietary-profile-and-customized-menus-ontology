@@ -1,0 +1,13 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pers: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/ontology#> .
+@prefix res: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/resource/> .
+
+res:Molluscs
+  a pers:Allergen ;
+  pers:allergenNumber 14 ;
+  rdfs:label "Molluscs"@en ;
+  rdfs:label "Mäkkýše"@sk ;
+  rdfs:label "Měkkýši"@cz ;
+  pers:hasIcon res:molluscs.svg ;
+  owl:sameAs <http://dbpedia.org/resource/Shellfish> .
