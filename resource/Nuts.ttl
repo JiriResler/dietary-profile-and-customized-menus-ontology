@@ -9,5 +9,5 @@ res:Nuts
   rdfs:label "Nuts"@en ;
   rdfs:label "Orechy"@sk ;
   rdfs:label "Ořechy"@cz ;
-  pers:hasIcon res:celery.svg ;
+  pers:hasIcon res:nuts.svg ;
   owl:sameAs <http://dbpedia.org/resource/Nut_(fruit)> .
