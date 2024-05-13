@@ -5,7 +5,7 @@
 
 res:Celery
   a pers:Allergen ;
-  pers:allergenNumber 1 ;
+  pers:allergenNumber 9 ;
   rdfs:label "Celery"@en ;
   rdfs:label "Zeler"@sk ;
   rdfs:label "Celer"@cz ;
