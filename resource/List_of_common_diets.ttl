@@ -1,0 +1,10 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix res: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/resource/> .
+
+res:List_of_common_diets
+  a rdf:Seq ;
+  rdfs:label "List of common diets"@en ;
+  dcterms:description "A list of most popular diets in Europe."@en ;
+  rdf:_1 res:Vegetarian_diet .
