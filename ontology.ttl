@@ -8,17 +8,26 @@
 @prefix ontology: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/ontology#> .
 @prefix schema: <https://schema.org/> .
 
+# Ontology
 ontology:
   a owl:Ontology ;
   dcterms:title "Personal restaurant menu viewer application ontology"@en ;
   dcterms:description "The ontology describing classes and properties used by applications which work with personal eating preferences of users."@en .
 
+# Classes
 ontology:Allergen 
   a rdfs:Class ;
   rdfs:label "Allergen"@en ;
   rdfs:comment "An allergen"@en ;
   owl:sameAs <http://dbpedia.org/resource/Allergen> .
 
+ontology:Diet 
+  a rdfs:Class ;
+  rdfs:label "Diet"@en ;
+  rdfs:comment "A diet"@en ;
+  owl:sameAs <http://dbpedia.org/resource/Diet_(nutrition)> .
+
+# Properties
 ontology:allergenNumber
   a rdf:Property ;
   rdfs:label "Allergen number"@en ;
@@ -32,12 +41,6 @@ ontology:hasIcon
   dcterms:description "The URL of a file which contains an image of the allergen"@en ;
   rdfs:domain ontology:Allergen ;
   rdfs:range foaf:Image .
-
-ontology:List_of_most_common_allergens
-  a rdf:Seq ;
-  rdfs:label "List of most common allergens"@en ;
-  dcterms:description "A list of most common allergens defined by the European Union."@en ;
-  schema:url <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/resource/List_of_most_common_allergens> .
 
 ontology:allergicTo
   a rdf:Property ;
