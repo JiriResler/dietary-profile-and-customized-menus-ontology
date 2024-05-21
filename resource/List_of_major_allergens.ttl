@@ -3,10 +3,10 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix res: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/resource/> .
 
-res:List_of_most_common_allergens
+res:List_of_major_allergens
   a rdf:Seq ;
-  rdfs:label "List of most common allergens"@en ;
-  dcterms:description "A list of most common allergens defined by the European Union. There are currently 14 allergens in the list."@en ;
+  rdfs:label "List of major allergens"@en ;
+  dcterms:description "A list of major allergens defined by the European Union. There are currently 14 allergens in the list."@en ;
   rdf:_1 res:Gluten ;
   rdf:_2 res:Crustacean ;
   rdf:_3 res:Eggs ;
