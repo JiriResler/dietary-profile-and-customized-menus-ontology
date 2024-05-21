@@ -9,4 +9,5 @@ res:List_of_common_diets
   dcterms:description "A list of most popular diets in Europe."@en ;
   rdf:_1 res:Vegetarian_diet ;
   rdf:_2 res:Vegan_diet ;
-  rdf:_3 res:Mediterranean_diet .
+  rdf:_3 res:Mediterranean_diet ;
+  rdf:_3 res:Ketogenic_diet .
