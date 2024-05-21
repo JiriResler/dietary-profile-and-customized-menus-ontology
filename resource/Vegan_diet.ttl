@@ -1,0 +1,11 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pers: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/ontology#> .
+@prefix res: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/resource/> .
+
+res:Vegan_diet
+  a pers:Diet ;
+  rdfs:label "Vegan diet"@en ;
+  rdfs:label "Vegánska diéta"@sk ;
+  rdfs:label "Veganská dieta"@cz ;
+  owl:sameAs <http://dbpedia.org/resource/Veganism> .
