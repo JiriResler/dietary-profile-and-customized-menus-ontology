@@ -3,11 +3,12 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix res: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/resource/> .
 
-res:List_of_common_diets
+res:List_of_popular_diets
   a rdf:Seq ;
-  rdfs:label "List of common diets"@en ;
-  dcterms:description "A list of most popular diets in Europe."@en ;
+  rdfs:label "List of popular diets"@en ;
+  dcterms:description "A list of most popular diets."@en ;
   rdf:_1 res:Vegetarian_diet ;
   rdf:_2 res:Vegan_diet ;
   rdf:_3 res:Mediterranean_diet ;
-  rdf:_3 res:Ketogenic_diet .
+  rdf:_4 res:Ketogenic_diet ;
+  rdf:_5 res:Atkins_diet .
