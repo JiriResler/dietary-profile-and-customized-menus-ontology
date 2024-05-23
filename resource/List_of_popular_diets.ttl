@@ -14,4 +14,5 @@ res:List_of_popular_diets
   rdf:_5 res:Atkins_diet ;
   rdf:_6 res:Paleolithic_diet ;
   rdf:_7 res:Pescetarian_diet ;
-  rdf:_8 res:Raw_diet .
+  rdf:_8 res:Raw_diet ;
+  rdf:_9 res:Fruitarian_diet .
