@@ -11,4 +11,5 @@ res:List_of_popular_diets
   rdf:_2 res:Vegan_diet ;
   rdf:_3 res:Mediterranean_diet ;
   rdf:_4 res:Ketogenic_diet ;
-  rdf:_5 res:Atkins_diet .
+  rdf:_5 res:Atkins_diet ;
+  rdf:_6 res:Paleolithic_diet .
