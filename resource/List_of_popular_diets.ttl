@@ -17,4 +17,5 @@ res:List_of_popular_diets
   rdf:_8 res:Raw_diet ;
   rdf:_9 res:Fruitarian_diet ;
   rdf:_10 res:Diabetic_diet ;
-  rdf:_11 res:DASH_diet .
+  rdf:_11 res:DASH_diet ;
+  rdf:_12 res:MIND_diet .
