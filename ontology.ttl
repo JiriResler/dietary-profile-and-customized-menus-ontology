@@ -11,8 +11,8 @@
 # Ontology
 ontology:
   a owl:Ontology ;
-  dcterms:title "Personal restaurant menu viewer application ontology"@en ;
-  dcterms:description "The ontology describing classes and properties used by applications which work with personal eating preferences of users."@en .
+  dcterms:title "Dietary profile and customized menus ontology"@en ;
+  dcterms:description "This ontology describes the classes and properties used by the suite of applications to display customized restaurant menus to guests based on their dietary profiles."@en .
 
 # Classes
 ontology:Allergen 
