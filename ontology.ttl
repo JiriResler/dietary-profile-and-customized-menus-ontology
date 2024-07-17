@@ -20,40 +20,40 @@ ontology:DietaryProfile
 ontology:Allergen 
   a rdfs:Class ;
   rdfs:label "Allergen"@en ;
-  rdfs:comment "An allergen"@en ;
+  rdfs:comment "An allergen."@en ;
   owl:sameAs <http://dbpedia.org/resource/Allergen> .
 
 ontology:Diet 
   a rdfs:Class ;
   rdfs:label "Diet"@en ;
-  rdfs:comment "A diet"@en ;
+  rdfs:comment "A diet."@en ;
   owl:sameAs <http://dbpedia.org/resource/Diet_(nutrition)> .
 
 # Properties
 ontology:allergenNumber
   a rdf:Property ;
   rdfs:label "Allergen number"@en ;
-  rdfs:comment "A number which is used in restaurant menus to identify a specific allergen"@en ;
+  rdfs:comment "A number which is used in restaurant menus to identify a specific allergen."@en ;
   rdfs:domain ontology:Allergen ;
   rdfs:range xsd:integer .
 
 ontology:hasIcon
   a rdf:Property ;
   rdfs:label "Has icon"@en ;
-  rdfs:comment "The URL of a file which contains an image of the allergen"@en ;
+  rdfs:comment "The URL of a file which contains an image of the allergen."@en ;
   rdfs:domain ontology:Allergen ;
   rdfs:range foaf:Image .
 
 ontology:allergicTo
   a rdf:Property ;
   rdfs:label "Allergic to"@en ;
-  rdfs:comment ""@en ;
+  rdfs:comment "Specifies that a foaf:Person is allergic to a ontology:Allergen."@en ;
   rdfs:domain foaf:Person ;
   rdfs:range ontology:Allergen .
 
 ontology:onDiet
   a rdf:Property ;
   rdfs:label "On diet"@en ;
-  rdfs:comment ""@en ;
+  rdfs:comment "Specifies that a foaf:Person is on a ontology:Diet."@en ;
   rdfs:domain foaf:Person ;
   rdfs:range ontology:Diet .
