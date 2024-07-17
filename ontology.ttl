@@ -15,6 +15,11 @@ ontology:
   dcterms:description "This ontology describes the classes and properties used by the suite of applications to display customized restaurant menus to guests based on their dietary profiles."@en .
 
 # Classes
+ontology:DietaryProfile
+  a foaf:PersonalProfileDocument ;
+  rdfs:label "Dietary profile"@en ;
+  rdfs:comment "A dietary profile of a foaf:Person containing their allergies, diets, and taste preferences."@en .
+
 ontology:Allergen 
   a rdfs:Class ;
   rdfs:label "Allergen"@en ;
@@ -47,3 +52,9 @@ ontology:allergicTo
   rdfs:label "Allergic to"@en ;
   rdfs:domain foaf:Person ;
   rdfs:range ontology:Allergen .
+
+ontology:onDiet
+  a rdf:Property ;
+  rdfs:label "On diet"@en ;
+  rdfs:domain foaf:Person ;
+  rdfs:range ontology:Diet .
