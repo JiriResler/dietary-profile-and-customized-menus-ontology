@@ -2,17 +2,14 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ontology: <https://raw.githubusercontent.com/JiriResler/dietary-profile-and-customized-menus-resources/main/ontology#> .
-@prefix schema: <https://schema.org/> .
 
 # Ontology
 ontology:
   a owl:Ontology ;
-  dcterms:title "Dietary profile and customized menus ontology"@en ;
-  dcterms:description "This ontology describes the classes and properties used by the suite of applications to display customized restaurant menus to guests based on their dietary profiles."@en .
+  rdfs:label "Dietary profile and customized menus ontology"@en ;
+  rdfs:comment "This ontology describes the classes and properties used by the suite of applications to display customized restaurant menus to guests based on their dietary profiles."@en .
 
 # Classes
 ontology:DietaryProfile
@@ -36,25 +33,27 @@ ontology:Diet
 ontology:allergenNumber
   a rdf:Property ;
   rdfs:label "Allergen number"@en ;
-  dcterms:description "A number which is used in restaurant menus to identify a specific allergen"@en ;
+  rdfs:comment "A number which is used in restaurant menus to identify a specific allergen"@en ;
   rdfs:domain ontology:Allergen ;
   rdfs:range xsd:integer .
 
 ontology:hasIcon
   a rdf:Property ;
   rdfs:label "Has icon"@en ;
-  dcterms:description "The URL of a file which contains an image of the allergen"@en ;
+  rdfs:comment "The URL of a file which contains an image of the allergen"@en ;
   rdfs:domain ontology:Allergen ;
   rdfs:range foaf:Image .
 
 ontology:allergicTo
   a rdf:Property ;
   rdfs:label "Allergic to"@en ;
+  rdfs:comment ""@en ;
   rdfs:domain foaf:Person ;
   rdfs:range ontology:Allergen .
 
 ontology:onDiet
   a rdf:Property ;
   rdfs:label "On diet"@en ;
+  rdfs:comment ""@en ;
   rdfs:domain foaf:Person ;
   rdfs:range ontology:Diet .
