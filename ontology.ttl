@@ -9,25 +9,31 @@
 ontology:
   a owl:Ontology ;
   rdfs:label "Dietary profile and customized menus ontology"@en ;
-  rdfs:comment "This ontology describes the classes and properties used by the suite of applications to display customized restaurant menus to guests based on their dietary profiles."@en .
+  rdfs:comment "Ontology describes the classes and properties used by the suite of applications to display customized restaurant menus to guests based on their dietary profiles."@en .
 
 # Classes
 ontology:DietaryProfile
   a foaf:PersonalProfileDocument ;
   rdfs:label "Dietary profile"@en ;
-  rdfs:comment "A dietary profile of a foaf:Person containing their allergies, diets, and taste preferences."@en .
+  rdfs:comment "Dietary profile of a foaf:Person containing their allergies, diets, and taste preferences."@en .
 
 ontology:Allergen 
   a rdfs:Class ;
   rdfs:label "Allergen"@en ;
-  rdfs:comment "An allergen."@en ;
+  rdfs:comment "Allergen which can be found in food ingredients."@en ;
   owl:sameAs <http://dbpedia.org/resource/Allergen> .
 
 ontology:Diet 
   a rdfs:Class ;
   rdfs:label "Diet"@en ;
-  rdfs:comment "A diet."@en ;
+  rdfs:comment "Diet as when someone eats only specific types of food due to health reasons or personal beliefs."@en ;
   owl:sameAs <http://dbpedia.org/resource/Diet_(nutrition)> .
+
+ontology:Cuisine
+  a rdfs:Class ;
+  rdfs:label "Cuisine"@en ;
+  rdfs:comment "Cuisine specific to a particular region of the world."@en ;
+  owl:sameAs <http://dbpedia.org/resource/Category:Cuisine> .
 
 # Properties
 ontology:allergenNumber
