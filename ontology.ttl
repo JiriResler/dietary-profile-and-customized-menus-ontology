@@ -5,13 +5,13 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ontology: <https://raw.githubusercontent.com/JiriResler/dietary-profile-and-customized-menus-resources/main/ontology#> .
 
-# Ontology
+#### Ontology ####
 ontology:
   a owl:Ontology ;
   rdfs:label "Dietary profile and customized menus ontology"@en ;
   rdfs:comment "Ontology describes the classes and properties used by the suite of applications to display customized restaurant menus to guests based on their dietary profiles."@en .
 
-# Classes
+#### Classes ####
 ontology:DietaryProfile
   a foaf:PersonalProfileDocument ;
   rdfs:label "Dietary profile"@en ;
@@ -41,21 +41,7 @@ ontology:Sauce
   rdfs:comment "Sauce used as a separate addition to a dish."@en ;
   owl:sameAs <http://dbpedia.org/resource/Sauce> .
 
-# Properties
-ontology:allergenNumber
-  a rdf:Property ;
-  rdfs:label "Allergen number"@en ;
-  rdfs:comment "A number which is used in restaurant menus to identify a specific allergen."@en ;
-  rdfs:domain ontology:Allergen ;
-  rdfs:range xsd:integer .
-
-ontology:hasIcon
-  a rdf:Property ;
-  rdfs:label "Has icon"@en ;
-  rdfs:comment "The URL of a file which contains an image of the allergen."@en ;
-  rdfs:domain ontology:Allergen ;
-  rdfs:range foaf:Image .
-
+#### Properties ####
 ontology:allergicTo
   a rdf:Property ;
   rdfs:label "Allergic to"@en ;
@@ -69,3 +55,36 @@ ontology:onDiet
   rdfs:comment "Specifies that a foaf:Person is on a ontology:Diet."@en ;
   rdfs:domain foaf:Person ;
   rdfs:range ontology:Diet .
+
+ontology:likesCuisine
+  a rdf:Property ;
+  rdfs:label "Likes cuisine"@en ;
+  rdfs:comment "Specifies that a foaf:Person likes a ontology:Cuisine."@en ;
+  rdfs:domain foaf:Person ;
+  rdfs:range ontology:Cuisine .
+
+ontology:prefersDessertTaste
+  a rdf:Property ;
+  rdfs:label "Prefers dessert taste"@en ;
+  rdfs:comment "Specifies that a foaf:Person prefers a specific taste of desserts."@en ;
+  rdfs:domain foaf:Person ;
+  rdfs:range 
+    [
+      a rdf:Alt ;
+      rdf:_1 "Sweet" ;
+      rdf:_2 "Savory" ;
+    ] .
+
+ontology:allergenNumber
+  a rdf:Property ;
+  rdfs:label "Allergen number"@en ;
+  rdfs:comment "A number which is used in restaurant menus to identify a specific allergen."@en ;
+  rdfs:domain ontology:Allergen ;
+  rdfs:range xsd:integer .
+
+ontology:hasIcon
+  a rdf:Property ;
+  rdfs:label "Has icon"@en ;
+  rdfs:comment "The URL of a file which contains an image of the allergen."@en ;
+  rdfs:domain ontology:Allergen ;
+  rdfs:range foaf:Image .
