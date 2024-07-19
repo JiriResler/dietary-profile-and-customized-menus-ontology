@@ -112,9 +112,9 @@ ontology:allergenNumber
   rdfs:domain ontology:Allergen ;
   rdfs:range xsd:integer .
 
-ontology:hasIcon
+ontology:hasAllergenIcon
   a rdf:Property ;
-  rdfs:label "Has icon"@en ;
+  rdfs:label "Has allergen icon"@en ;
   rdfs:comment "The URL of a file which contains an image of the allergen."@en ;
   rdfs:domain ontology:Allergen ;
   rdfs:range foaf:Image .
