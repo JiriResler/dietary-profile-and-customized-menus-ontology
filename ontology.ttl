@@ -35,6 +35,12 @@ ontology:Cuisine
   rdfs:comment "Cuisine specific to a particular region of the world."@en ;
   owl:sameAs <http://dbpedia.org/resource/Category:Cuisine> .
 
+ontology:Sauce
+  a rdfs:Class ;
+  rdfs:label "Sauce"@en ;
+  rdfs:comment "Sauce used as a separate addition to a dish."@en ;
+  owl:sameAs <http://dbpedia.org/resource/Sauce> .
+
 # Properties
 ontology:allergenNumber
   a rdf:Property ;
