@@ -82,12 +82,11 @@ ontology:preferesLevelOfSpiciness
   rdfs:range 
     [
       a rdf:Alt ;
-      rdf:_1 "none" ;
-      rdf:_2 "mild" ;
-      rdf:_3 "medium" ;
-      rdf:_4 "medium-hot" ;
-      rdf:_5 "hot" ;
-      rdf:_6 "extra hot" ;
+      rdf:_1 "mild" ;
+      rdf:_2 "medium" ;
+      rdf:_3 "medium-hot" ;
+      rdf:_4 "hot" ;
+      rdf:_5 "extra hot" ;
     ] .
 
 ontology:howOftenAddsSalt
