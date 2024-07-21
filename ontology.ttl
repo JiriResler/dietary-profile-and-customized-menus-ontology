@@ -56,19 +56,11 @@ ontology:onDiet
   rdfs:domain foaf:Person ;
   rdfs:range ontology:Diet .
 
-ontology:likesCuisine
+ontology:likesTasteOf
   a rdf:Property ;
-  rdfs:label "Likes cuisine"@en ;
-  rdfs:comment "Specifies that a foaf:Person likes a ontology:Cuisine."@en ;
-  rdfs:domain foaf:Person ;
-  rdfs:range ontology:Cuisine .
-
-ontology:likesSauce
-  a rdf:Property ;
-  rdfs:label "Likes sauce"@en ;
-  rdfs:comment "Specifies that a foaf:Person likes a ontology:Sauce."@en ;
-  rdfs:domain foaf:Person ;
-  rdfs:range ontology:Sauce .
+  rdfs:label "Likes taste of"@en ;
+  rdfs:comment "Specifies that a foaf:Person likes the taste of something."@en ;
+  rdfs:domain foaf:Person .
 
 ontology:prefersDessertTaste
   a rdf:Property ;
