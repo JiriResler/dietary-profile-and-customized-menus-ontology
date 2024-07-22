@@ -98,10 +98,3 @@ ontology:allergenNumber
   rdfs:comment "A number which is used identify a specific allergen."@en ;
   rdfs:domain dbp:Allergen ;
   rdfs:range xsd:integer .
-
-ontology:allergenIcon
-  a rdf:Property ;
-  rdfs:label "Has allergen icon"@en ;
-  rdfs:comment "The URL of a file which contains an image of the allergen."@en ;
-  rdfs:domain ontology:Allergen ;
-  rdfs:range foaf:Image .
