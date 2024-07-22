@@ -3,6 +3,7 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dbp: <http://dbpedia.org/resource/> .
 @prefix ontology: <https://raw.githubusercontent.com/JiriResler/dietary-profile-and-customized-menus-resources/main/ontology#> .
 
 #### Ontology ####
@@ -100,8 +101,8 @@ ontology:howOftenAddsSalt
 ontology:allergenNumber
   a rdf:Property ;
   rdfs:label "Allergen number"@en ;
-  rdfs:comment "A number which is used in restaurant menus to identify a specific allergen."@en ;
-  rdfs:domain ontology:Allergen ;
+  rdfs:comment "A number which is used identify a specific allergen."@en ;
+  rdfs:domain dbp:Allergen ;
   rdfs:range xsd:integer .
 
 ontology:allergenIcon
