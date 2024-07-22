@@ -30,12 +30,6 @@ ontology:NationalCuisine
   rdfs:comment "Cuisine specific to a particular country."@en ;
   owl:sameAs <http://www.wikidata.org/entity/Q1968435> .
 
-ontology:Sauce
-  a rdfs:Class ;
-  rdfs:label "Sauce"@en ;
-  rdfs:comment "Sauce used as a separate addition to a dish."@en ;
-  owl:sameAs <http://dbpedia.org/resource/Sauce> .
-
 #### Properties ####
 ontology:allergicTo
   a rdf:Property ;
