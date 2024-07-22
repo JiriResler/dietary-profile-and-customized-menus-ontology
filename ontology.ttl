@@ -31,16 +31,16 @@ ontology:NationalCuisine
   owl:sameAs <http://www.wikidata.org/entity/Q1968435> .
 
 #### Properties ####
-ontology:allergicTo
+ontology:isAllergicTo
   a rdf:Property ;
-  rdfs:label "Allergic to"@en ;
+  rdfs:label "Is allergic to"@en ;
   rdfs:comment "Specifies that a foaf:Person is allergic to a ontology:Allergen."@en ;
   rdfs:domain foaf:Person ;
-  rdfs:range ontology:Allergen .
+  rdfs:range dbp:Allergen .
 
-ontology:onDiet
+ontology:isOnDiet
   a rdf:Property ;
-  rdfs:label "On diet"@en ;
+  rdfs:label "Is on diet"@en ;
   rdfs:comment "Specifies that a foaf:Person is on a ontology:Diet."@en ;
   rdfs:domain foaf:Person ;
   rdfs:range ontology:Diet .
