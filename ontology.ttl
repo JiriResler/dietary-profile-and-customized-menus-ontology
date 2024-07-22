@@ -24,11 +24,11 @@ ontology:Diet
   rdfs:comment "Diet as when someone eats only specific types of food due to health reasons or personal beliefs."@en ;
   owl:sameAs <http://dbpedia.org/resource/Diet_(nutrition)> .
 
-ontology:Cuisine
+ontology:NationalCuisine
   a rdfs:Class ;
-  rdfs:label "Cuisine"@en ;
-  rdfs:comment "Cuisine specific to a particular region of the world."@en ;
-  owl:sameAs <http://dbpedia.org/resource/Category:Cuisine> .
+  rdfs:label "National cuisine"@en ;
+  rdfs:comment "Cuisine specific to a particular country."@en ;
+  owl:sameAs <http://www.wikidata.org/entity/Q1968435> .
 
 ontology:Sauce
   a rdfs:Class ;
