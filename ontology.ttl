@@ -17,12 +17,6 @@ ontology:DietaryProfile
   rdfs:label "Dietary profile"@en ;
   rdfs:comment "Dietary profile of a foaf:Person containing their allergies, diets, and taste preferences."@en .
 
-ontology:Allergen 
-  a rdfs:Class ;
-  rdfs:label "Allergen"@en ;
-  rdfs:comment "Allergen which can be found in food ingredients."@en ;
-  owl:sameAs <http://dbpedia.org/resource/Allergen> .
-
 ontology:Diet 
   a rdfs:Class ;
   rdfs:label "Diet"@en ;
