@@ -1,0 +1,9 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix int: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/resource/intolerance/> .
+
+int:Caffeine_sensitivity
+  a <https://www.wikidata.org/wiki/Q1727229> ;
+  rdfs:label "caffeine sensitivity"@en ;
+  rdfs:label "intolerancia na kofeín"@sk ;
+  rdfs:label "intolerance kofeinu"@cz ;
+  rdfs:comment "increased sensitivity to caffeine, leading to negative side effects such as a racing heartbeat or headache"@en .
