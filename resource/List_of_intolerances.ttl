@@ -1,7 +1,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix resource: <https://raw.githubusercontent.com/Jiriresourceler/personalized-resourcetaurant-menu-viewer-application-ontology/main/resource/> .
-@prefix intolerance: <https://raw.githubusercontent.com/Jiriresourceler/personalized-resourcetaurant-menu-viewer-application-ontology/main/resource/intolerance/> .
+@prefix resource: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/resource/> .
+@prefix intolerance: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/resource/intolerance/> .
 
 resource:List_of_intolerances
   a rdf:Seq ;
