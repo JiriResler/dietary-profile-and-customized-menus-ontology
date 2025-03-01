@@ -1,7 +1,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix int: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/resource/intolerance/> .
+@prefix intolerance: <https://raw.githubusercontent.com/JiriResler/personalized-restaurant-menu-viewer-application-ontology/main/resource/intolerance/> .
 
-int:Amine_sensitivity
+intolerance:Amine_sensitivity
   a <https://www.wikidata.org/wiki/Q1727229> ;
   rdfs:label "amine sensitivity"@en ;
   rdfs:label "amínová intolerancia"@sk ;

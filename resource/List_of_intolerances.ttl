@@ -1,0 +1,11 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix resource: <https://raw.githubusercontent.com/Jiriresourceler/personalized-resourcetaurant-menu-viewer-application-ontology/main/resource/> .
+@prefix intolerance: <https://raw.githubusercontent.com/Jiriresourceler/personalized-resourcetaurant-menu-viewer-application-ontology/main/resource/intolerance/> .
+
+resource:List_of_intolerances
+  a rdf:Seq ;
+  rdfs:label "List of intolerances"@en ;
+  rdfs:comment "List of common food intolerances/sensitivities."@en ;
+  rdf:_1 intolerance:Amine_sensitivity ;
+  rdf:_2 intolerance:Caffeine_sensitivity .
