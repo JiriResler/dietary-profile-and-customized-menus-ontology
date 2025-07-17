@@ -4,97 +4,156 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix dbp: <http://dbpedia.org/resource/> .
-@prefix ontology: <https://raw.githubusercontent.com/JiriResler/dietary-profile-and-customized-menus-resources/main/ontology#> .
+@prefix ont: <https://jiriresler.solidcommunity.net/public/dietary-profile-and-customized-menus-ontology#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix schema: <https://schema.org/> .
 
 #### Ontology ####
-ontology:
+ont:
   a owl:Ontology ;
-  rdfs:label "Dietary profile and customized menus ontology"@en ;
-  rdfs:comment "Ontology describes the classes and properties used by the suite of applications to display customized restaurant menus to guests based on their dietary profiles."@en .
+  dc:title "Dietary profile and customized menus ontology"@en ;
+  rdfs:comment "Ontology describes the classes and properties used by applications which display customized restaurant menus to guests based on their dietary profiles."@en .
 
-#### Classes ####
-ontology:DietaryProfile
+ont:DietaryProfile
   a foaf:PersonalProfileDocument ;
-  rdfs:label "Dietary profile"@en ;
-  rdfs:comment "Dietary profile of a foaf:Person containing their allergies, diets, and taste preferences."@en .
+  rdfs:label "DietaryProfile"@en ;
+  rdfs:comment "Dietary profile of a foaf:Person containing their allergies, diets, and taste preferences."@en ;
+  rdfs:isDefinedBy ont: .
 
-ontology:Diet 
-  a rdfs:Class ;
-  rdfs:label "Diet"@en ;
-  rdfs:comment "Diet as when someone eats only specific types of food due to health reasons or personal beliefs."@en ;
-  owl:sameAs <http://dbpedia.org/resource/Diet_(nutrition)> .
-
-ontology:NationalCuisine
-  a rdfs:Class ;
-  rdfs:label "National cuisine"@en ;
-  rdfs:comment "Cuisine specific to a particular country."@en ;
-  owl:sameAs <http://www.wikidata.org/entity/Q1968435> .
-
-#### Properties ####
-ontology:isAllergicTo
+ont:allergicTo
   a rdf:Property ;
-  rdfs:label "Is allergic to"@en ;
-  rdfs:comment "Specifies that a foaf:Person is allergic to a ontology:Allergen."@en ;
-  rdfs:domain foaf:Person ;
-  rdfs:range dbp:Allergen .
+  rdfs:label "allergicTo"@en ;
+  rdfs:comment "Specifies that a person is allergic to a certain allergen."@en ;
+  rdfs:domain ont:DietaryProfile ;
+  rdfs:range  wd:Q186752 ;
+  rdfs:isDefinedBy ont: .
 
-ontology:isOnDiet
+ont:onDiet
   a rdf:Property ;
-  rdfs:label "Is on diet"@en ;
-  rdfs:comment "Specifies that a foaf:Person is on a ontology:Diet."@en ;
-  rdfs:domain foaf:Person ;
-  rdfs:range ontology:Diet .
+  rdfs:label "onDiet"@en ;
+  rdfs:comment "Specifies that a person is following a certain diet."@en ;
+  rdfs:domain ont:DietaryProfile ;
+  rdfs:range  wd:Q474191 ;
+  rdfs:isDefinedBy ont: .
 
-ontology:likesTasteOf
+ont:dailyCalorieIntakeGoal
   a rdf:Property ;
-  rdfs:label "Likes taste of"@en ;
-  rdfs:comment "Specifies that a foaf:Person likes the taste of something."@en ;
-  rdfs:domain foaf:Person .
+  rdfs:label "dailyCalorieIntakeGoal"@en ;
+  rdfs:comment "Specifies a person's daily calorie intake goal in kcal."@en ;
+  rdfs:domain ont:DietaryProfile ;
+  rdfs:range  xsd:integer ;
+  rdfs:isDefinedBy ont: .
 
-ontology:prefersDessertTaste
+ont:foodSpicinessPreference
   a rdf:Property ;
-  rdfs:label "Prefers dessert taste"@en ;
-  rdfs:comment "Specifies that a foaf:Person prefers a specific taste of desserts."@en ;
-  rdfs:domain foaf:Person ;
+  rdfs:label "foodSpicinessPreference"@en ;
+  rdfs:comment "Specifies a person's preferred level of food spiciness."@en ;
+  rdfs:domain ont:DietaryProfile ;
   rdfs:range 
     [
       a rdf:Alt ;
-      rdf:_1 "sweet" ;
-      rdf:_2 "savory" ;
-    ] .
+      rdf:_1 "mild"@en ;
+      rdf:_2 "medium"@en ;
+      rdf:_3 "hot"@en ;
+      rdf:_4 "extra-hot"@en ;
+      rdf:_5 "not-spicy"@en ;
+    ] ;
+  rdfs:isDefinedBy ont: .
 
-ontology:preferesLevelOfSpiciness
+ont:preferredCookingMethod
   a rdf:Property ;
-  rdfs:label "Prefers level of spiciness"@en ;
-  rdfs:comment "Specifies how spicy a foaf:Person prefers their food to be."@en ;
-  rdfs:domain foaf:Person ;
+  rdfs:label "preferredCookingMethod"@en ;
+  rdfs:comment "Specifies a preferred cooking method of a person, like baking or frying."@en ;
+  rdfs:domain ont:DietaryProfile ;
+  rdfs:range  wd:Q1039303 ;
+  rdfs:isDefinedBy ont: .
+
+ont:favoriteCuisine
+  a rdf:Property ;
+  rdfs:label "favoriteCuisine"@en ;
+  rdfs:comment "Specifies a favorite cuisine of a person."@en ;
+  rdfs:domain ont:DietaryProfile ;
+  rdfs:range  wd:Q1968435 ;
+  rdfs:isDefinedBy ont: .
+
+ont:likedIngredient
+  a rdf:Property ;
+  rdfs:label "likedIngredient"@en ;
+  rdfs:comment "Specifies an ingredient a person likes."@en ;
+  rdfs:domain ont:DietaryProfile ;
+  rdfs:range  wd:Q25403900 ;
+  rdfs:isDefinedBy ont: .
+
+ont:dislikedIngredient
+  a rdf:Property ;
+  rdfs:label "dislikedIngredient"@en ;
+  rdfs:comment "Specifies an ingredient a person dislikes."@en ;
+  rdfs:domain ont:DietaryProfile ;
+  rdfs:range  wd:Q25403900 ;
+  rdfs:isDefinedBy ont: .
+
+ont:hasOutlet
+  a rdf:Property ;
+  rdfs:label "hasOutlet"@en ;
+  rdfs:comment "Specifies a physical place like a restaurant, owned by a brand."@en ;
+  rdfs:domain schema:Brand ;
+  rdfs:range schema:FoodEstablishment ;
+  rdfs:isDefinedBy ont: .
+
+ont:spicinessLevel
+  a rdf:Property ;
+  rdfs:label "spicinessLevel"@en ;
+  rdfs:comment "Specifies the level of a food item's spiciness."@en ;
+  rdfs:domain schema:MenuItem ;
   rdfs:range 
     [
       a rdf:Alt ;
-      rdf:_1 "mild" ;
-      rdf:_2 "medium" ;
-      rdf:_3 "medium-hot" ;
-      rdf:_4 "hot" ;
-      rdf:_5 "extra hot" ;
-    ] .
+      rdf:_1 "mild"@en ;
+      rdf:_2 "medium"@en ;
+      rdf:_3 "hot"@en ;
+      rdf:_4 "extra-hot"@en ;
+      rdf:_5 "not-spicy"@en ;
+    ] ;
+  rdfs:isDefinedBy ont: .
 
-ontology:howOftenAddsSalt
+ont:availability
   a rdf:Property ;
-  rdfs:label "How often adds salt"@en ;
-  rdfs:comment "Specifies how often a foaf:Person adds additional salt to their food if it is prepared by someone else."@en ;
-  rdfs:domain foaf:Person ;
-  rdfs:range 
-    [
-      a rdf:Alt ;
-      rdf:_1 "never" ;
-      rdf:_2 "sometimes" ;
-      rdf:_3 "often" ;
-      rdf:_4 "always" ;
-    ] .
+  rdfs:label "availability"@en ;
+  rdfs:comment "Specifies the availability period of a menu."@en ;
+  rdfs:domain schema:Menu ;
+  rdfs:range  xsd:string;
+  rdfs:isDefinedBy ont: .
 
-ontology:allergenNumber
+ont:visibility
   a rdf:Property ;
-  rdfs:label "Allergen number"@en ;
-  rdfs:comment "A number which is used identify a specific allergen."@en ;
-  rdfs:domain dbp:Allergen ;
-  rdfs:range xsd:integer .
+  rdfs:label "visibility"@en ;
+  rdfs:comment "Specifies the visibility of a menu or a menu item."@en ;
+  rdfs:domain schema:Menu ;
+  rdfs:domain schema:MenuItem ;
+  rdfs:range  xsd:boolean;
+  rdfs:isDefinedBy ont: .
+
+ont:containsAllergen
+  a rdf:Property ;
+  rdfs:label "containsAllergen"@en ;
+  rdfs:comment "Specifies an allergen contained in a menu item."@en ;
+  rdfs:domain schema:MenuItem ;
+  rdfs:range wd:Q186752 ;
+  rdfs:isDefinedBy ont: .
+
+ont:containsIngredient
+  a rdf:Property ;
+  rdfs:label "containsIngredient"@en ;
+  rdfs:comment "Specifies an ingredient which a menu item consists of."@en ;
+  rdfs:domain schema:MenuItem ;
+  rdfs:range wd:Q25403900 ;
+  rdfs:isDefinedBy ont: .
+
+ont:cookingMethod
+  a rdf:Property ;
+  rdfs:label "cookingMethod"@en ;
+  rdfs:comment "Specifies a cooking method which was used to prepare a menu item."@en ;
+  rdfs:domain schema:MenuItem ;
+  rdfs:range wd:Q1039303 ;
+  rdfs:isDefinedBy ont: .
